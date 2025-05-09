@@ -1,8 +1,8 @@
 // src/rHomeViewuter/modules/home.js
 export default [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
-    component: () => import('@/views/HomeView.vue'),
+    component: () => import('../../views/HomeView.vue'),
   },
 ];
