@@ -12,3 +12,8 @@ export default {
   components: {},
 };
 </script>
+<style lang="scss" scoped>
+.home {
+  color: $primary-color;
+}
+</style>
