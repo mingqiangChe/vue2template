@@ -9,4 +9,15 @@ module.exports = defineConfig({
       },
     },
   },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://backend.example.com', // 后端 API 的基础地址
+        changeOrigin: true, // 是否更改请求头中的 origin
+        pathRewrite: {
+          '^/api': '', // 将请求中的 `/api` 替换为空
+        },
+      },
+    },
+  },
 });
